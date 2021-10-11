@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Video pLayer</title>
+  </head>
+  <body>
+<div class="wrapper">
+
+  <div class="player">
+    
+  <div class="player_overlay">
+      <h1 class="player-title">Lo-Fi</h1>
+    <div class="playerActions">
+
+      <button 
+        class="button" 
+        id="backward" 
+        aria-label="Retroseder 10s"
+        title="Retroseder 10s">
+      </button>
+      <button 
+        class="button" 
+        id="play" 
+        aria-label="Reproducir"
+        title="Reproducir">
+      </button>
+      <button 
+        class="button" 
+        id="pause" 
+        hidden 
+        aria-label="Pausar">
+      </button>
+        <button 
+        class="button" 
+        id="forward" 
+        aria-label="Adelantar 10s">
+      </button>
+    </div>
+    <div class="player-progress">
+        <input 
+        id="progress"
+        type="range"
+        min="0"
+        value="0"
+        step="1"
+        >
+      </div>
+  </div>
+  
+      <video
+        id="M_video"
+        poster="/images/poster.jpg"
+        src="/videos/lofi.mp4"
+      ></video>
+      
+  </div>  
+</div>
+  </body>
+  <script src="/js/index.js"></script>
+</html>
