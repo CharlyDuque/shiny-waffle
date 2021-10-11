@@ -1,0 +1,65 @@
+@import url(/css/Button.css);
+:root {
+  --Primary: #43dde6;
+  --White: #ffffff;
+}
+*{margin: 0;}
+body {
+  color: var(--White);
+  background-color: var(--Primary);
+}
+.wrapper{
+  max-inline-size: 900px;
+  margin: 0 auto;
+}
+.player{
+  margin: 20px;
+  position: relative;
+}
+.player-title{
+  color: var(--White);
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+  
+}
+.playerActions{
+position: absolute;
+inset: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+gap: 10px;
+}
+.player video {
+  /*  height: 200px; */
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+
+  
+}
+
+.player-progress{
+  position:absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  display: flex;
+  padding: 10px;
+}
+.player-progress input{
+  flex: 1;
+  z-index: 2;
+}
+.player_overlay{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: .4s opacity;
+  z-index: 1;
+}
+.player .player_overlay:hover{
+  opacity: 1;
+}
