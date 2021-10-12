@@ -10,6 +10,10 @@
   background-color: transparent;
   background-repeat: no-repeat;
 }
+.button:hover{
+  transition: .8s transform;
+  transform: scale(1.2);
+}
 .button:active {
   transform: scale(0.9);
 }
