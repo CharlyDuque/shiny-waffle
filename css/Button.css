@@ -1,24 +1,26 @@
-button {
+.playerActions>.button {
   border: none;
   inline-size: 30px;
   block-size: 30px;
   background-position: center;
   background-color: transparent;
   background-repeat: no-repeat;
+  
   /* height: ; */
 }
 .button:active {
   transform: scale(0.9);
 }
 #backward {
-  background-image: url(./images/-10.svg);
+  background-image: url(../images/-10.svg);
+  z-index: 3;
 }
 #forward {
-  background-image: url(./images/+10.svg);
+  background-image: url(../images/+10.svg);
 }
 #play {
-  background-image: url(./images/play.svg);
+  background-image: url(../images/play.svg);
 }
 #pause {
-  background-image: url(./images/pause.svg);
+  background-image: url(../images/pause.svg);
 }

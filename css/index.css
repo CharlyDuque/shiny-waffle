@@ -1,7 +1,7 @@
-@import url(./css/Button.css);
+@import url(/css/Button.css);
 :root {
   --Primary: #43dde6;
-  --White: #e4e4e4;
+  --White: #ffffff;
 }
 *{margin: 0;}
 body {
